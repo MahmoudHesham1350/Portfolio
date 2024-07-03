@@ -15,7 +15,7 @@
 }
 
 .task_bar h1 {
-    padding: 10px;
+    padding: 15px;
 }
 
 .task_bar h1:hover {
@@ -26,17 +26,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 400px;
+    width: 500px;
 }
 
 .navigation > *{
-    padding: 10px;
+    padding: 15px;
 } 
 
 .navigation a {
     text-decoration: none;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     font-family: sans-serif;
 }
 
@@ -71,7 +71,7 @@
 /***************************************************************/
 
 .home_page {
-    height: 800px;
+    height: 1000px;
     background-color: #c5c5dc;
     display: flex;
     flex-direction: row;
@@ -81,7 +81,9 @@
 
 
 .home_page .left {
-    width: 30%;
+    width: 50%;
+    max-width: 700px;
+    font-size: x-large;
 }
 
 .home_page .left > *{
@@ -89,19 +91,21 @@
     margin: 10px;   
 }
 
+
 .left span {
-    font-size: 35px;
+    font-size: 50px;
     color: #0000ff;
     font-weight: 800;
 }
 
 .talk {
-    padding: 10px 50px 10px 50px;
+    padding: 15px 50px 15px 50px;
     border-radius: 20px;
     border-color: rgba(240, 248, 255, 0);
     color: white;
     background-color: #000056ad;
     position: relative;
+    font-size: large;
 }
 .talk:hover {
     background-color: #00005688;
@@ -115,7 +119,7 @@
 
 .about {
     background-color: rgba(255, 0, 0, 0.57);
-    height: 800px;
+    height: 1080px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -125,21 +129,13 @@
 
 .about .text {
     width: 40%;
-    margin: 10px;
-}
-.text h2 {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.text h1 {
-    margin-top: 5px;
-    font-size: 35px;
+    margin: 20px;
+    margin-bottom: 100px;
+    font-size: x-large;
 }
 
 .text span {
     color: #0000ff;
-    font-weight: 1000;
 }
 
 .text p {
@@ -199,12 +195,13 @@
 
 .projects {
     background-color: rgba(0, 0, 255, 0.66);
+    height: 1100px;
    
 }
 .projects h1 {
     text-align: center;
     padding-top: 50px;
-
+    font-size: 50px;
 }
 
 .flex { 
@@ -212,7 +209,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
     padding-bottom: 300px;
     gap: 50px;
 }
@@ -221,7 +218,7 @@
     background-color: azure;
     width: 28%;
     max-width: 400px;
-    height: 400px;
+    height: 550px;
     border-radius: 10px;
     text-align: center;
 }
@@ -234,7 +231,7 @@
     background-color: black;
     margin-top: 10px;
     width: 90%;
-    max-width: 330px;
+    max-width: 400px;
     align-items: center;
     height: 60%;
     border-radius: 10px;
@@ -246,7 +243,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 80px;
     width: 90%;
     margin: auto;
 }
@@ -278,36 +275,36 @@
 /***************************************************************/
 
 .contact {
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.882);
     text-align: center;
     display: block;
-    height: 800px;
+    height: 1000px;
     padding-top: 100px;
 }
 
 .contact h1 {
-    color: aliceblue;
+    color: rgba(255, 255, 255, 0.674);
     padding-bottom: 100px;
-    font-size: 40px;
+    font-size: 50px;
 }
 .input > * {
-    margin: 20px auto;
+    margin: 30px auto;
 }
 .input input{
     display: block;
-    padding: 20px;
-    width: 500px;
+    padding: 25px;
+    width: 700px;
     border-radius: 5px;
 }
 
 #message {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .contact button {
     width: 200px;
     margin-top: 50px;
-    padding: 10px;
+    padding: 12px;
     background-color: rgba(40, 40, 158, 0.814);
     border: 0;
     color: aliceblue;
@@ -365,22 +362,22 @@
     .about .text {
         width: 70%;
     }
+    .projects {
+        height: 2000px;
+    }
 
     .flex {
         flex-direction: column;
         padding-bottom: 100px;
     }
     .flex > * {
-        width: 300px;
+        width: 80%;
     }
     .input input{
-        width: 50%;
+        width: 80%;
         min-width: 300px;
     }
-    #message {
-        width: 50%;
-        min-width: 300px;        
-    }
+
     .contact {
         padding-top: 50px;
     }
