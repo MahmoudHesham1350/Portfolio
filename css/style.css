@@ -386,6 +386,9 @@
     }
     .home_page {
         flex-direction: column;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
     .home_page .left {
         width: 70%;
@@ -401,21 +404,22 @@
 
     .about {
         flex-direction: column;
+        height: auto;
+        padding-top: 10%;
     }
     .about .text {
         width: 70%;
     }
     .projects {
-        height: 2000px;
+        height: 1800px;
     }
 
     .projects h1 {
-        padding-top: 50px;
+        font-size: 3rem;
     }
 
     .flex {
         flex-direction: column;
-        padding-bottom: 100px;
     }
     .flex > * {
         width: 80%;
