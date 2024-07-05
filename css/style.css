@@ -322,19 +322,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    min-height: 700px;
+    height: 850px;
 }
 
 .contact h1 {
     color: #EEEEEE;
     font-size: 50px;
 }
-.input > * {
-    margin: 30px auto;
+.input  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: 100%;
 }
-.input input{
-    display: block;
+.input > * {
     padding: 25px;
     width: 700px;
     border-radius: 5px;
@@ -423,6 +426,8 @@
     }
     .flex > * {
         width: 80%;
+        max-width: 350px;
+        min-width: 300px;
     }
     .input input{
         width: 80%;
