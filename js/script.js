@@ -19,6 +19,8 @@ addEventListener("DOMContentLoaded", function (){
         }
         
     });
+
+
     document.querySelector(".menu_icon").onclick = () => {
 
         if(drop === false){
@@ -33,6 +35,15 @@ addEventListener("DOMContentLoaded", function (){
         }
     
     }
+
 })
 
+addEventListener("resize", function(){
+    const drop_menu = document.querySelector(".drop_menu");
+    if(window.innerWidth > 1000) {
+        drop_menu.style.display  = "none";
+        menu_icon.src ="./assets/menu.png"
+        drop = false;
+    }
+})
 

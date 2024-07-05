@@ -6,8 +6,8 @@
 
 
 .task_bar {
-    background-color: #0b7181;
-    color: white;
+    background-color: #31363F;
+    color: #EEEEEE;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,7 +28,7 @@
 
 .navigation a {
     text-decoration: none;
-    color: white;
+    color: #EEEEEE;
     font-size: 20px;
     font-family: sans-serif;
     padding: 15px;
@@ -40,14 +40,14 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background-color: #0b7181;
+    background-color: #31363F;
     width: 100%;
     display: none;
 }
 
 .drop_menu a {
     text-decoration: none;
-    color: white;
+    color: #EEEEEE;
     font-size: 20px;
     font-family: sans-serif;
     padding: 15px;
@@ -71,6 +71,7 @@
 .menu_icon button {
     border: none;
     background-color: rgba(255, 255, 255, 0);
+    color: #EEEEEE;
 }
 
 .menu_icon img {
@@ -93,7 +94,8 @@
 
 .home_page {
     height: 100vh;
-    background-color: #EBF4F6;
+    min-height: 500px;
+    background: linear-gradient(114deg, #EEEEEE, #76ABAE);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -105,6 +107,7 @@
     width: 50%;
     max-width: 700px;
     font-size: x-large;
+    color: #222831;
 }
 
 .home_page .left > *{
@@ -123,13 +126,16 @@
     padding: 15px 50px 15px 50px;
     border-radius: 20px;
     border-color: rgba(240, 248, 255, 0);
-    color: white;
-    background-color: #071952;
+    color: #EEEEEE;
+    background-color: #76ABAE;
     position: relative;
     font-size: large;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.268));
+
 }
 .talk:hover {
-    background-color: #071952e2;
+    background-color: #669496;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.589));
     cursor: pointer;
 }
 /***************************************************************/
@@ -139,8 +145,9 @@
 /***************************************************************/
 
 .about {
-    background-color: #071952a6;
+    background: linear-gradient(110deg, #31363F, #EEEEEE);
     height: 100vh;
+    min-height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -153,14 +160,17 @@
     margin: 20px;
     margin-bottom: 100px;
     font-size: x-large;
+    color: #222831;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.268));
 }
 
 .text span {
-    color: #0000ff;
+    color: #3b5657;
 }
 
 .text p {
     margin-top: 40px;
+    filter: none;
 }
 
 
@@ -204,8 +214,9 @@
 .img img {
     width: 350px;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 40px;
     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.589));
+    margin-bottom: 100px;
 }
 
 
@@ -215,8 +226,9 @@
 /***************************************************************/
 
 .projects {
-    background-color: #EBF4F6;
+    background-color: #EEEEEE;
     height: 100vh;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -224,7 +236,10 @@
 }
 .projects h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 4rem;
+    color: #222831;
+    filter: drop-shadow(10px 10px 20px #222831);
+
 }
 
 .flex { 
@@ -232,32 +247,36 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .flex > * {
-    background-color: #071952a6;
+    background: linear-gradient(114deg, #76ABAE, #31363fa2);
     width: 28%;
+    height: 500px;
     max-width: 400px;
-    height: 100%;
     border-radius: 10px;
-    text-align: center;
     color: #EBF4F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .flex > *:hover {
-    filter: drop-shadow(8px 8px 10px #071952a6);
+    filter: drop-shadow(8px 8px 10px #76ABAE);
 }
 
 .flex img {
-    background-color: black;
     margin-top: 10px;
     width: 90%;
     max-width: 400px;
     align-items: center;
     height: 60%;
-    border-radius: 10px;
-    opacity: 80%;
+    border-radius: 20px;
+    opacity: 90%;
 }
 
 
@@ -266,7 +285,6 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    padding-top: 80px;
     width: 90%;
     margin: auto;
 }
@@ -298,18 +316,18 @@
 /***************************************************************/
 
 .contact {
-    background-color: #0b7181;
+    background-color: #222831;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-
+    min-height: 700px;
 }
 
 .contact h1 {
-    color: #072a52a6;
+    color: #EEEEEE;
     font-size: 50px;
 }
 .input > * {
@@ -329,7 +347,7 @@
 .contact button {
     width: 200px;
     padding: 10px;
-    background-color: #071952;
+    background-color: #76ABAE;
     border: 0;
     color: aliceblue;
     border-radius: 5px;
@@ -337,7 +355,7 @@
 }
 
 .contact button:hover {
-    background-color: #071952e2;
+    background-color: #76abaecb;
     cursor: pointer;
 }
 
@@ -345,7 +363,7 @@
 
 
 .footer {
-    background-color: #EBF4F6;
+    background-color: #EEEEEE;
     text-align: center;
     padding: 10px;
 }
